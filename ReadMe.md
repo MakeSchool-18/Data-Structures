@@ -16,7 +16,7 @@
 
 **Challenges:**
   - practice conversions on [number bases worksheet]
-  - implement base conversion functions for positive numbers
+  - implement base conversion functions for positive numbers using [starter code](source/bases.py) and [unit tests](source/test_bases.py)
   - stretch: implement base conversion for negative binary numbers
   - stretch: implement base conversion for fractional numbers
 
