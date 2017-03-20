@@ -1,5 +1,11 @@
 # Advanced Data Structures & Algorithms with Python
 
+## Course Schedule
+
+**Course Dates:** Monday, March 20 – Friday, May 12, 2017 (7 weeks)
+
+**Class Times:** Monday, Wednesday, Friday 1–3pm (21 class sessions)
+
 
 ## Working with this GitHub repository
 
