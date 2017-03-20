@@ -7,6 +7,24 @@
 **Class Times:** Monday, Wednesday, Friday 1–3pm (21 class sessions)
 
 
+### Class 1: Monday, March 20 – Number Bases
+
+**Topics:**
+  - review exponents, logarithms
+  - [number bases slides] decimal, binary, hexadecimal
+  - [negative integer representations] signed magnitude, ones' complement, two's complement
+
+**Challenges:**
+  - practice conversions on [number bases worksheet]
+  - implement base conversion functions for positive numbers
+  - stretch: implement base conversion for negative binary numbers
+  - stretch: implement base conversion for fractional numbers
+
+[number bases slides]: slides/NumberBases.pdf
+[number bases worksheet]: slides/NumberBasesWorksheet.pdf
+[negative integer representations]: https://en.wikipedia.org/wiki/Signed_number_representations
+
+
 ## Working with this GitHub repository
 
 This repository (located at `https://github.com/MakeSchool-18/Data-Structures`) is the course's _origin_ repository which will contain course materials including links, slides, and challenges.
