@@ -29,10 +29,10 @@
 [negative integer representations]: https://en.wikipedia.org/wiki/Signed_number_representations
 [radix point]: https://en.wikipedia.org/wiki/Radix_point
 
-[number bases slides]: ../slides/NumberBases.pdf
-[number bases worksheet]: ../slides/NumberBasesWorksheet.pdf
+[number bases slides]: slides/NumberBases.pdf
+[number bases worksheet]: slides/NumberBasesWorksheet.pdf
 [number bases article]: https://betterexplained.com/articles/numbers-and-bases/
 [base conversion calculator]: https://baseconvert.com/
 
-[starter code]: ../source/bases.py
-[unit tests]: ../source/test_bases.py
+[starter code]: source/bases.py
+[unit tests]: source/test_bases.py

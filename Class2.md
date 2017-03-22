@@ -32,11 +32,11 @@
 [permutation]: https://en.wikipedia.org/wiki/Permutation
 [combination]: https://en.wikipedia.org/wiki/Combination
 
-[algorithm analysis slides]: ../slides/AlgorithmAnalysis.pdf
+[algorithm analysis slides]: slides/AlgorithmAnalysis.pdf
 [IC big O]: https://www.interviewcake.com/article/python/big-o-notation-time-and-space-complexity
 [SO big O]: http://stackoverflow.com/questions/487258/what-is-a-plain-english-explanation-of-big-o-notation
 
-[recursion starter code]: ../source/recursion.py
-[recursion unit tests]: ../source/test_recursion.py
-[search starter code]: ../source/search.py
-[search unit tests]: ../source/test_search.py
+[recursion starter code]: source/recursion.py
+[recursion unit tests]: source/test_recursion.py
+[search starter code]: source/search.py
+[search unit tests]: source/test_search.py
