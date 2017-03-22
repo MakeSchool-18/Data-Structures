@@ -9,6 +9,8 @@
 
 ### [Class 1](Class1.md): Monday, March 20 – Number Bases
 
+### [Class 2](Class2.md): Wednesday, March 22 – Recursion & Search Algorithms
+
 
 ## Working with this GitHub repository
 
