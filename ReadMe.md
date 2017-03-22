@@ -7,22 +7,7 @@
 **Class Times:** Monday, Wednesday, Friday 1–3pm (21 class sessions)
 
 
-### Class 1: Monday, March 20 – Number Bases
-
-**Topics:**
-  - review exponents, logarithms
-  - [number bases slides] decimal, binary, hexadecimal
-  - [negative integer representations] signed magnitude, ones' complement, two's complement
-
-**Challenges:**
-  - practice conversions on [number bases worksheet]
-  - implement base conversion functions for positive numbers using [starter code](source/bases.py) and [unit tests](source/test_bases.py)
-  - stretch: implement base conversion for negative binary numbers
-  - stretch: implement base conversion for fractional numbers
-
-[number bases slides]: slides/NumberBases.pdf
-[number bases worksheet]: slides/NumberBasesWorksheet.pdf
-[negative integer representations]: https://en.wikipedia.org/wiki/Signed_number_representations
+### [Class 1](Class1.md): Monday, March 20 – Number Bases
 
 
 ## Working with this GitHub repository
