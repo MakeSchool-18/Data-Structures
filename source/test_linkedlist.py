@@ -19,11 +19,13 @@ class LinkedListTest(unittest.TestCase):
         ll = LinkedList()
         assert ll.head is None
         assert ll.tail is None
+        assert ll.size == 0
 
     def test_init_with_list(self):
         ll = LinkedList(['A', 'B', 'C'])
         assert ll.head.data == 'A'
         assert ll.tail.data == 'C'
+        assert ll.size == 3
 
     def test_items(self):
         ll = LinkedList()
@@ -45,29 +47,72 @@ class LinkedListTest(unittest.TestCase):
         ll.append('C')
         assert ll.length() == 3
 
+    def test_size(self):
+        ll = LinkedList()
+        assert ll.size == 0
+        ll.append('A')
+        assert ll.size == 1
+        ll.append('B')
+        assert ll.size == 2
+        ll.append('C')
+        assert ll.size == 3
+
+    def test_get_at_index(self):
+        ll = LinkedList(['A', 'B', 'C'])
+        assert ll.get_at_index(0) == 'A'
+        assert ll.get_at_index(1) == 'B'
+        assert ll.get_at_index(2) == 'C'
+        with self.assertRaises(ValueError):
+            ll.get_at_index(3)
+            ll.get_at_index(-1)
+
+    def test_insert_at_index(self):
+        ll = LinkedList()
+        ll.insert_at_index(0, 'B')
+        assert ll.head.data == 'B'
+        assert ll.tail.data == 'B'
+        assert ll.size == 1
+        ll.insert_at_index(1, 'C')
+        assert ll.head.data == 'B'
+        assert ll.tail.data == 'C'
+        assert ll.size == 2
+        ll.insert_at_index(0, 'A')
+        assert ll.head.data == 'A'
+        assert ll.tail.data == 'C'
+        assert ll.size == 3
+        with self.assertRaises(ValueError):
+            ll.insert_at_index(4, 'D')
+            ll.insert_at_index(-1, 'E')
+
     def test_append(self):
         ll = LinkedList()
         ll.append('A')
         assert ll.head.data == 'A'
         assert ll.tail.data == 'A'
+        assert ll.size == 1
         ll.append('B')
         assert ll.head.data == 'A'
         assert ll.tail.data == 'B'
+        assert ll.size == 2
         ll.append('C')
         assert ll.head.data == 'A'
         assert ll.tail.data == 'C'
+        assert ll.size == 3
 
     def test_prepend(self):
         ll = LinkedList()
         ll.prepend('C')
         assert ll.head.data == 'C'
         assert ll.tail.data == 'C'
+        assert ll.size == 1
         ll.prepend('B')
         assert ll.head.data == 'B'
         assert ll.tail.data == 'C'
+        assert ll.size == 2
         ll.prepend('A')
         assert ll.head.data == 'A'
         assert ll.tail.data == 'C'
+        assert ll.size == 3
 
     def test_delete(self):
         ll = LinkedList()
@@ -77,12 +122,15 @@ class LinkedListTest(unittest.TestCase):
         ll.delete('A')
         assert ll.head.data == 'B'
         assert ll.tail.data == 'C'
+        assert ll.size == 2
         ll.delete('C')
         assert ll.head.data == 'B'
         assert ll.tail.data == 'B'
+        assert ll.size == 1
         ll.delete('B')
         assert ll.head is None
         assert ll.tail is None
+        assert ll.size == 0
         with self.assertRaises(ValueError):
             ll.delete('D')
 

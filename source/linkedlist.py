@@ -18,6 +18,7 @@ class LinkedList(object):
         """Initialize this linked list; append the given items, if any"""
         self.head = None
         self.tail = None
+        self.size = 0
         if iterable:
             for item in iterable:
                 self.append(item)
@@ -66,6 +67,22 @@ class LinkedList(object):
             current = current.next
         # Now node_count contains the number of nodes
         return node_count
+
+    def get_at_index(self, index):
+        """Return the item at the given index in this linked list, or
+        raise ValueError if the given index is out of range of the list size"""
+        # Check if the given index is out of range and if so raise an error
+        if not (0 <= index < self.size):
+            raise ValueError('List index out of range: {}'.format(index))
+        # TODO: Find the node at the given index and return the node's data
+
+    def insert_at_index(self, index, item):
+        """Insert the given item at the given index in this linked list, or
+        raise ValueError if the given index is out of range of the list size"""
+        # Check if the given index is out of range and if so raise an error
+        if not (0 <= index <= self.size):
+            raise ValueError('List index out of range: {}'.format(index))
+        # TODO: Find the node before the given index and insert the item after
 
     def append(self, item):
         """Insert the given item at the tail of this linked list"""
@@ -171,9 +188,14 @@ def test_linked_list():
     print(ll)
     print('head: ' + str(ll.head))
     print('tail: ' + str(ll.tail))
+    print('size: ' + str(ll.size))
     print('length: ' + str(ll.length()))
 
-    # Enable this after implementing delete:
+    print('Getting items by index:')
+    for index in range(ll.size):
+        item = ll.get_at_index(index)
+        print('get_at_index({}): {}'.format(index, repr(item)))
+
     print('Deleting items:')
     ll.delete('B')
     print(ll)
@@ -183,6 +205,7 @@ def test_linked_list():
     print(ll)
     print('head: ' + str(ll.head))
     print('tail: ' + str(ll.tail))
+    print('size: ' + str(ll.size))
     print('length: ' + str(ll.length()))
 
 
