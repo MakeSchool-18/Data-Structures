@@ -1,4 +1,4 @@
-### Class 4: Monday, January 30 –  List, Array & Linked List
+### Class 4: Monday, March 27 –  List, Array & Linked List
 
 **Topics:**
 - compare [abstract data types] and [concrete data structures][data structures]
