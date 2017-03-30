@@ -28,7 +28,18 @@
 - annotate all class instance methods with running time complexity analysis
 
 **Stretch Challenges:**
-- implement `Deque` class with doubly linked list
+- implement `Deque` class with doubly linked list:
+    - implement `is_empty` - check if the deque is empty
+    - implement `length` - return the number of items in the deque
+    - implement `push_front(item)` - insert `item` at the front of the deque
+    - implement `push_back(item)` - insert `item` at the back of the deque
+    - implement `front` - return the item at the front of the deque
+    - implement `back` - return the item at the back of the deque
+    - implement `pop_front` - remove and return the item at the front of the deque
+    - implement `pop_back` - remove and return the item at the back of the deque
+- write your own unit tests for your `Deque` class
+    - include test cases for each class instance method
+- annotate functions with complexity analysis
 
 [abstract data types]: https://en.wikipedia.org/wiki/Abstract_data_type
 [data structures]: https://en.wikipedia.org/wiki/Data_structure
