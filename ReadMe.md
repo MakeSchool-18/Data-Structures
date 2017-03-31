@@ -17,6 +17,8 @@
 
 ### [Class 5](Class5.md): Wednesday, March 29 – List, Stack & Queue
 
+### [Class 6](Class6.md): Friday, March 31 – Map & Hash Table
+
 
 ## Working with this GitHub repository
 
