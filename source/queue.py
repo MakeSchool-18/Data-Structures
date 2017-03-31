@@ -17,7 +17,7 @@ class LinkedQueue(object):
 
     def __repr__(self):
         """Return a string representation of this queue"""
-        return 'Queue({} items, top={})'.format(self.length(), self.front())
+        return 'Queue({} items, front={})'.format(self.length(), self.front())
 
     def is_empty(self):
         """Return True if this queue is empty, or False otherwise"""
@@ -61,7 +61,7 @@ class ArrayQueue(object):
 
     def __repr__(self):
         """Return a string representation of this queue"""
-        return 'Queue({} items, top={})'.format(self.length(), self.front())
+        return 'Queue({} items, front={})'.format(self.length(), self.front())
 
     def is_empty(self):
         """Return True if this queue is empty, or False otherwise"""
