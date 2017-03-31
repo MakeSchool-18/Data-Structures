@@ -8,6 +8,7 @@ class HashTable(object):
     def __init__(self, init_size=8):
         """Initialize this hash table with the given initial size"""
         self.buckets = [LinkedList() for i in range(init_size)]
+        self.size = 0  # Count number of key-value entries
 
     def __str__(self):
         """Return a formatted string representation of this hash table"""
@@ -21,6 +22,29 @@ class HashTable(object):
     def _bucket_index(self, key):
         """Return the bucket index where the given key would be stored"""
         return hash(key) % len(self.buckets)
+
+    def load_factor(self):
+        """Return the load factor, the ratio of number of entries to buckets"""
+        # TODO: Calculate load factor
+        # return ...
+
+    def _resize(self, new_size=None):
+        """Resize this hash table's buckets and rehash all key-value entries.
+        Should be called automatically when load factor exceeds a threshold
+        such as 0.75 after an insertion (when set is called with a new key)."""
+        # If unspecified, choose new size dynamically based on current size
+        if new_size is None:
+            new_size = self.size * 2  # Double size
+        # Option to reduce size if buckets are sparsely filled (low load factor)
+        elif new_size is 0:
+            new_size = self.size / 2  # Half size
+        # TODO: Get a list to temporarily hold all current key-value entries
+        # ...
+        # TODO: Create a new list of new_size total empty linked list buckets
+        # ...
+        # TODO: Insert each key-value entry into the new list of buckets,
+        # which will rehash them into a new bucket index based on the new size
+        # ...
 
     def keys(self):
         """Return a list of all keys in this hash table"""
@@ -49,7 +73,7 @@ class HashTable(object):
         return all_items
 
     def length(self):
-        """Return the length of this hash table by traversing its buckets"""
+        """Return the number of key-value entries by traversing its buckets"""
         # Count number of key-value entries in each of the buckets
         item_count = 0
         for bucket in self.buckets:
@@ -96,6 +120,10 @@ class HashTable(object):
             bucket.delete(entry)
         # Insert the new key-value entry into the bucket in either case
         bucket.append((key, value))
+        # TODO: Check if the load factor exceeds a threshold such as 0.75
+        # ...
+        # TODO: If so, automatically resize to reduce the load factor
+        # ...
 
     def delete(self, key):
         """Delete the given key and its associated value, or raise KeyError"""
@@ -112,7 +140,7 @@ class HashTable(object):
 
 
 def test_hash_table():
-    ht = HashTable()
+    ht = HashTable(4)
     print('HashTable: ' + str(ht))
 
     print('Setting entries:')
@@ -120,15 +148,26 @@ def test_hash_table():
     print('set(I, 1): ' + str(ht))
     ht.set('V', 5)
     print('set(V, 5): ' + str(ht))
+    print('size: ' + str(ht.size))
+    print('length: ' + str(ht.length()))
+    print('buckets: ' + str(len(ht.buckets)))
+    print('load_factor: ' + str(ht.load_factor()))
     ht.set('X', 10)
     print('set(X, 10): ' + str(ht))
+    ht.set('L', 50)  # Should trigger resize
+    print('set(L, 50): ' + str(ht))
+    print('size: ' + str(ht.size))
     print('length: ' + str(ht.length()))
+    print('buckets: ' + str(len(ht.buckets)))
+    print('load_factor: ' + str(ht.load_factor()))
 
     print('Getting entries:')
     print('get(I): ' + str(ht.get('I')))
     print('get(V): ' + str(ht.get('V')))
     print('get(X): ' + str(ht.get('X')))
+    print('get(L): ' + str(ht.get('L')))
     print('contains(X): ' + str(ht.contains('X')))
+    print('contains(Z): ' + str(ht.contains('Z')))
 
     print('Deleting entries:')
     ht.delete('I')
@@ -137,8 +176,13 @@ def test_hash_table():
     print('delete(V): ' + str(ht))
     ht.delete('X')
     print('delete(X): ' + str(ht))
+    ht.delete('L')
+    print('delete(L): ' + str(ht))
     print('contains(X): ' + str(ht.contains('X')))
+    print('size: ' + str(ht.size))
     print('length: ' + str(ht.length()))
+    print('buckets: ' + str(len(ht.buckets)))
+    print('load_factor: ' + str(ht.load_factor()))
 
 
 if __name__ == '__main__':
