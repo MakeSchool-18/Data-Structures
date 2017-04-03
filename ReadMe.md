@@ -19,6 +19,8 @@
 
 ### [Class 6](Class6.md): Friday, March 31 – Map & Hash Table
 
+### [Class 7](Class7.md): Monday, April 3 – Set & Circular Buffer
+
 
 ## Working with this GitHub repository
 
