@@ -10,7 +10,20 @@
 - play with VisuAlgo's [interactive binary search tree visualization][visualgo bst]
 
 **Challenges:**
-- implement `BinarySearchTree` class with `BinaryNode` objects
+- implement `BinaryNode` class with the following properties and instance methods:
+    - `data` - the node's data
+    - `left` - the node's left child, if any
+    - `right` - the node's right child, if any
+    - `is_leaf` - check if the node is a leaf (has no children)
+    - `is_internal` - check if the node is internal (has at least one child)
+- implement `BinarySearchTree` class using `BinaryNode` objects with the following properties and instance methods:
+    - `size` - property that tracks the number of nodes in constant time
+    - `is_empty` - check if the tree is empty
+    - `insert(data)` - insert a new node with `data` in order in the tree
+    - `search(data)` - check if a node with `data` is present in the tree
+    - `delete(data)` - remove the node with `data` from the tree
+- write your own unit tests for your `BinarySearchTree` class
+    - include test cases for each class instance method
 - annotate all class instance methods with running time complexity analysis
 
 **Stretch Challenges:**
