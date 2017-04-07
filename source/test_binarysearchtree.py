@@ -13,6 +13,40 @@ class TestBinaryNode(unittest.TestCase):
         assert node.left is None
         assert node.right is None
 
+    def test_is_leaf(self):
+        # Create node with no children
+        node = BinaryNode(2)
+        assert node.is_leaf() is True
+        # Attach left child node
+        node.left = BinaryNode(1)
+        assert node.is_leaf() is False
+        # Attach right child node
+        node.right = BinaryNode(3)
+        assert node.is_leaf() is False
+        # Detach left child node
+        node.left = None
+        assert node.is_leaf() is False
+        # Detach right child node
+        node.right = None
+        assert node.is_leaf() is True
+
+    def test_is_internal(self):
+        # Create node with no children
+        node = BinaryNode(2)
+        assert node.is_internal() is False
+        # Attach left child node
+        node.left = BinaryNode(1)
+        assert node.is_internal() is True
+        # Attach right child node
+        node.right = BinaryNode(3)
+        assert node.is_internal() is True
+        # Detach left child node
+        node.left = None
+        assert node.is_internal() is True
+        # Detach right child node
+        node.right = None
+        assert node.is_internal() is False
+
 
 class TestBinarySearchTree(unittest.TestCase):
 
@@ -119,6 +153,30 @@ class TestBinarySearchTree(unittest.TestCase):
         assert bst.root.left.right.data == 3
         assert bst.root.right.left.data == 5
         assert bst.root.right.right.data == 7
+
+    def test_items_in_order(self):
+        # Create a complete binary search tree of 7 items in level-order
+        items = [4, 2, 6, 1, 3, 5, 7]
+        bst = BinarySearchTree(items)
+        assert bst.items_in_order() == [1, 2, 3, 4, 5, 6, 7]
+
+    def test_items_pre_order(self):
+        # Create a complete binary search tree of 7 items in level-order
+        items = [4, 2, 6, 1, 3, 5, 7]
+        bst = BinarySearchTree(items)
+        assert bst.items_pre_order() == [4, 2, 1, 3, 6, 5, 7]
+
+    def test_items_post_order(self):
+        # Create a complete binary search tree of 7 items in level-order
+        items = [4, 2, 6, 1, 3, 5, 7]
+        bst = BinarySearchTree(items)
+        assert bst.items_post_order() == [1, 3, 2, 5, 7, 6, 4]
+
+    def test_items_level_order(self):
+        # Create a complete binary search tree of 7 items in level-order
+        items = [4, 2, 6, 1, 3, 5, 7]
+        bst = BinarySearchTree(items)
+        assert bst.items_level_order() == [4, 2, 6, 1, 3, 5, 7]
 
 
 if __name__ == '__main__':
