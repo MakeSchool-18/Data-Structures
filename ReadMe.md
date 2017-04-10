@@ -25,6 +25,8 @@
 
 ### [Class 9](Class9.md): Friday, April 7 – Tree Traversals
 
+### [Class 10](Class10.md): Monday, April 10 – Iterative Sorting Algorithms
+
 
 ## Working with this GitHub repository
 
