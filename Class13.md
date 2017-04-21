@@ -1,7 +1,7 @@
 ### Class 13: Monday, April 17 – Recursive Algorithm Analysis
 
 **Topics:**
-- recursive algorithm analysis with trees, [recurrence relations], [master theorem]
+- [recursive] algorithm analysis with trees, [recurrence relations], [master theorem]
 - partition algorithm and [quick sort]
 - how to [choose a pivot]: first, last, middle, median-of-three, random
 - partitioning schemes: [Lomuto], [Hoare], or [three-way]
@@ -42,6 +42,8 @@
 **Project:**
 - [sorting algorithms] with real-world data on Make School's Online Academy
 
+[divide-and-conquer]: https://en.wikipedia.org/wiki/Divide_and_conquer_algorithm
+[recursive]: https://en.wikipedia.org/wiki/Recursion_(computer_science)
 [recurrence relations]: https://en.wikipedia.org/wiki/Recurrence_relation
 [master theorem]: https://en.wikipedia.org/wiki/Master_theorem
 [quick sort]: https://en.wikipedia.org/wiki/Quicksort
