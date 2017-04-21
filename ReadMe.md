@@ -35,6 +35,8 @@
 
 ### [Class 14](Class14.md): Wednesday, April 19 – Priority Queue & Heap
 
+### [Class 15](Class15.md): Friday, April 21 – Sorting Algorithms Recap
+
 
 ## Working with this GitHub repository
 
