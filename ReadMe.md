@@ -37,6 +37,8 @@
 
 ### [Class 15](Class15.md): Friday, April 21 – Sorting Algorithms Recap
 
+### [Class 16](Class16.md): Monday, May 1 – Graphs
+
 
 ## Working with this GitHub repository
 
