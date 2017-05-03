@@ -39,6 +39,8 @@
 
 ### [Class 16](Class16.md): Monday, May 1 – Graphs
 
+### [Class 17](Class17.md): Wednesday, May 3 – Graph Traversals & Components
+
 
 ## Working with this GitHub repository
 
