@@ -41,6 +41,8 @@
 
 ### [Class 17](Class17.md): Wednesday, May 3 – Graph Traversals & Components
 
+### [Class 18](Class18.md): Friday, May 5 – Graph Spanning Trees & Shortest Paths
+
 
 ## Working with this GitHub repository
 
