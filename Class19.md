@@ -11,12 +11,31 @@
 - play with USF's [interactive splay tree animations][USF splay tree]
 
 **Challenges:**
-- implement AVL tree with insert and search operations
-- annotate functions with complexity analysis
+- implement `AVLNode` class with the following properties and instance methods:
+    - `data` - the node's data
+    - `left` - the node's left child, if any
+    - `right` - the node's right child, if any
+    - `parent` - the node's parent, if not the root
+    - `height` - the node's height (the number of edges on the longest downward path to a descendant leaf node)
+    - `update_height` - recalculate height based on left child's height and right child's height
+    - `balance_factor` - return the difference between left child's height and right child's height
+- implement `AVLTree` class using `AVLNode` objects with the following properties and instance methods:
+    - `root` - the tree's root node
+    - `is_empty` - check if the tree is empty
+    - `insert(data)` - insert a new node with `data` in order in the tree
+    - `search(data)` - check if a node with `data` is present in the tree
+    - `retrace_up(node)` - retrace the path from `node` up to the tree's root and perform any rotations necessary to rebalance
+    - `rotate_left(node)` - rotate `node`'s right child so `node` becomes its left child
+    - `rotate_right(node)` - rotate `node`'s left child so `node` becomes its right child
+    - `items_in_order` - return a list of all items in the tree found using in-order traversal
+    - `items_level_order` - return a list of all items in the tree found using level-order traversal
+- write your own unit tests for your `AVLNode` and `AVLTree` classes
+    - include test cases for each class instance method
+- annotate class instance methods with complexity analysis
 
 **Stretch Challenges:**
 - implement splay tree with insert and search operations
-- annotate functions with complexity analysis
+- annotate class instance methods with complexity analysis
 
 [self-balancing binary search trees]: https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree
 [rotations]: https://en.wikipedia.org/wiki/Tree_rotation
