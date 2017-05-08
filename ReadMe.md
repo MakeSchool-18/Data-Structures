@@ -43,6 +43,8 @@
 
 ### [Class 18](Class18.md): Friday, May 5 – Graph Spanning Trees & Shortest Paths
 
+### [Class 19](Class19.md): Monday, May 8 – Rotating Binary Search Trees
+
 
 ## Working with this GitHub repository
 
