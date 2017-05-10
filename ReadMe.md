@@ -45,6 +45,8 @@
 
 ### [Class 19](Class19.md): Monday, May 8 – Rotating Binary Search Trees
 
+### [Class 20](Class20.md): Wednesday, May 10 – Trie & Multiple Key Trees
+
 
 ## Working with this GitHub repository
 
