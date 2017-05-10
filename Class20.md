@@ -10,6 +10,9 @@
 - review Julia Geist's [trie slides] with animations and examples
 - read Julia Geist's [trie article] with animations and code samples
 - play with USF's [interactive trie animations][USF trie]
+- review Alex Dejeu's [B-tree slides] with examples and motivating context
+- read Alex Dejeu's [2-3 tree article] with animations and code samples
+- watch MIT's [2-3 tree and B-tree video lecture]
 - play with USF's [interactive B-tree animations][USF B-tree]
 
 **Challenges:**
@@ -53,6 +56,9 @@
 [trie slides]: https://docs.google.com/presentation/d/11LDrlureRaXyg6ZfjgJvdMZohLfk-0JYuB1RW2xVZDE/edit#slide=id.p
 [trie article]: https://medium.com/algorithms/trie-prefix-tree-algorithm-ee7ab3fe3413
 [Julia trie article]: http://juliageist.com/blog/algorithms-and-data-structures/trie-prefix-tree/
+[B-tree slides]: slides/B-Trees.pdf
+[2-3 tree article]: https://medium.com/@alexdejeu/9b50e3484a47
+[2-3 tree and B-tree video lecture]: https://www.youtube.com/watch?v=TOb1tuEZ2X4
 [USF trie]: https://www.cs.usfca.edu/~galles/visualization/Trie.html
 [USF B-tree]: https://www.cs.usfca.edu/~galles/visualization/BTree.html
 
