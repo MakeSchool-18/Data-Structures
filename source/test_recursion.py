@@ -1,6 +1,6 @@
 #!python
 
-from recursion import factorial
+from recursion import factorial, fibonacci
 import unittest
 
 
@@ -36,6 +36,42 @@ class TestRecursion(unittest.TestCase):
         with self.assertRaises(ValueError, msg='function undefined for float'):
             factorial(2.0)
             factorial(3.14159)
+
+    def test_fibonacci_with_small_integers(self):
+        # fibonacci should return fibonacci(n-1) + fibonacci(n-2) for n >= 0
+        assert fibonacci(0) == 0  # base case
+        assert fibonacci(1) == 1  # base case
+        assert fibonacci(2) == 1
+        assert fibonacci(3) == 2
+        assert fibonacci(4) == 3
+        assert fibonacci(5) == 5
+        assert fibonacci(6) == 8
+        assert fibonacci(7) == 13
+        assert fibonacci(8) == 21
+        assert fibonacci(9) == 34
+        assert fibonacci(10) == 55
+
+    def test_fibonacci_with_large_integers(self):
+        # these could run for a long time...
+        assert fibonacci(15) == 610
+        assert fibonacci(20) == 6765
+        assert fibonacci(25) == 75025
+        # you may need to be very patient for these...
+        # assert fibonacci(30) == 832040
+        # assert fibonacci(35) == 9227465
+        # assert fibonacci(40) == 102334155
+
+    def test_fibonacci_with_negative_integers(self):
+        # fibonacci should raise a ValueError for n < 0
+        with self.assertRaises(ValueError, msg='function undefined for n < 0'):
+            fibonacci(-1)
+            fibonacci(-5)
+
+    def test_fibonacci_with_floating_point_numbers(self):
+        # fibonacci should raise a ValueError for non-integer n
+        with self.assertRaises(ValueError, msg='function undefined for float'):
+            fibonacci(2.0)
+            fibonacci(3.14159)
 
 
 if __name__ == '__main__':

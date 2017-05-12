@@ -47,6 +47,8 @@
 
 ### [Class 20](Class20.md): Wednesday, May 10 – Trie & Multiple Key Trees
 
+### [Class 21](Class21.md): Friday, May 12 – Memoization & Dynamic Programming
+
 
 ## Working with this GitHub repository
 
