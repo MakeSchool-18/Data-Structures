@@ -6,6 +6,7 @@
 
 **Resources:**
 - play with VisuAlgo's [interactive recursion and memoization visualizations][visualgo recursion]
+- read Nabil Khaja's [memoization and decorators article] with code samples
 - read WikiBooks's Algorithms book chapter on [memoization and dynamic programming][wikibooks dp]
 <!-- - read about [greedy algorithms][wikibooks greedy] on WikiBooks -->
 
@@ -41,6 +42,8 @@
 [wikibooks greedy]: https://en.wikibooks.org/wiki/Algorithms/Greedy_Algorithms
 [wikibooks dp]: https://en.wikibooks.org/wiki/Algorithms/Dynamic_Programming
 [visualgo recursion]: https://visualgo.net/recursion
+
+[memoization and decorators article]: https://medium.com/@nkhaja/memoization-and-decorators-with-python-32f607439f84
 
 [recursion starter code]: source/recursion.py
 [recursion unit tests]: source/test_recursion.py
