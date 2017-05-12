@@ -62,7 +62,7 @@
 [USF trie]: https://www.cs.usfca.edu/~galles/visualization/Trie.html
 [USF B-tree]: https://www.cs.usfca.edu/~galles/visualization/BTree.html
 
-[Alex's 2-3 tree starter code]: https://github.com/alexander-dejeu/CodeForMediumArticles/blob/master/two_three_tree.py
-[Alex's 2-3 tree unit tests]: https://github.com/alexander-dejeu/CodeForMediumArticles/blob/master/test_two_three_tree.py
+[Alex's 2-3 tree starter code]: https://github.com/alexander-dejeu/CodeForMediumArticles/blob/master/TwoThreeTree/starter_two_three_tree.py
+[Alex's 2-3 tree unit tests]: https://github.com/alexander-dejeu/CodeForMediumArticles/blob/master/TwoThreeTree/test_two_three_tree.py
 
 [phone call routing]: http://make.sc/db-phone-call-routing
